@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="es">
 
 <head>
@@ -98,6 +98,10 @@
     .visit.highlight {
       outline: 2px solid #0b5f60;
       box-shadow: 0 0 0 2px rgba(11, 95, 96, 0.15);
+    }
+
+    .hidden-visit {
+      display: none;
     }
 
     .table-wrap {
@@ -385,6 +389,11 @@
         <option value="">Todos</option>
       </select>
     </label>
+    <label>Profesor:
+      <select id="filter-teacher">
+        <option value="">Todos</option>
+      </select>
+    </label>
     <button id="clear-filters" type="button">Limpiar</button>
   </div>
   <div class="table-wrap">
@@ -457,7 +466,7 @@
             </div>
           </div>
           <hr>
-          <div class="visit" style="background-color: #eef6ff;" data-group="3&#186; DIVER" data-level="1? ESO">
+          <div class="visit hidden-visit" style="background-color: #eef6ff;" data-group="3&#186; DIVER" data-level="1? ESO">
             <div class="group">3&#186; DIVER</div>
             <div class="cell">TUT/RELIG (<strong>DIVER COMUN</strong>) [<strong>aula emocion</strong>]</div>
             <div class="pill"><strong>CyberPill:</strong> Ciberacoso y c&#243;mo actuar<ul class="pill-list">
@@ -490,7 +499,7 @@
           <hr>
           <div class="visit" style="background-color: #eef9f3;" data-group="4&#186; A" data-level="ESO">
             <div class="group">4&#186; A</div>
-            <div class="cell">4&#186;DeE.s.Ingl (<strong>Pilares, Flora.</strong>) [<strong>X36</strong>]</div>
+            <div class="cell">4&#186;DeE.s.Ingl (<strong>González, Begoña</strong>) [<strong>X36</strong>]</div>
             <div class="pill"><strong>CyberPill:</strong> Ingenier&#237;a social y suplantaci&#243;n<ul
                 class="pill-list">
                 <li>Mam&#225;, es mi n&#250;mero nuevo</li>
@@ -615,7 +624,7 @@
           <hr>
           <div class="visit" style="background-color: #f0f5e8;" data-group="3&#186; C" data-level="ESO">
             <div class="group">3&#186; C</div>
-            <div class="cell">3&#186;DeE.LeCaYL (<strong>Ruiz Nu&#241;o, Beatriz</strong>) [<strong>X33</strong>]</div>
+            <div class="cell">3&#186;DeE.LeCaYL (<strong>Rincón, Víctor</strong>) [<strong>X33</strong>]</div>
             <div class="pill"><strong>CyberPill:</strong> Ciberacoso y c&#243;mo actuar<ul class="pill-list">
                 <li>El acosador no manda solo, el grupo decide</li>
                 <li>No es broma, es ciberacoso</li>
@@ -678,6 +687,16 @@
             </div>
           </div>
           <hr>
+<div class="visit" style="background-color: #e8fff9;" data-group="2&#186; BACH A" data-level="2? BACH">
+            <div class="group">2&#186; BACH A</div>
+            <div class="cell">ACT. F&#205;SICA (<strong>Mangado, Daniel</strong>) [<strong>pista</strong>]</div>
+            <div class="pill"><strong>CyberPill:</strong> Ingenier&#237;a social<ul class="pill-list">
+                <li>Ese portal &#8216;oficial&#8217; es un clon</li>
+                <li>Tu cerebro es el objetivo</li>
+              </ul>
+            </div>
+          </div>
+          <hr>
           <div class="visit" style="background-color: #e8f4ff;" data-group="4&#186; B" data-level="ESO">
             <div class="group">4&#186; B</div>
             <div class="cell">4&#186;DeE.Fr(sId (<strong>Mart&#237;n, Marie Pascale</strong>) [<strong>X34</strong>]
@@ -692,7 +711,7 @@
         <td>
           <div class="visit" style="background-color: #f9f2e8;" data-group="1&#186; BACH C" data-level="2? BACH">
             <div class="group">1&#186; BACH C</div>
-            <div class="cell">1&#186;DeBa(hYCiI (<strong>Morilla Gallardo, Claudia</strong>) [<strong>X48</strong>]
+            <div class="cell">1&#186;DeBa(hYCiI (<strong>Morilla Gallardo, Claudia</strong>) [<strong>X43</strong>]
             </div>
             <div class="pill"><strong>CyberPill:</strong> Ingenier&#237;a social<ul class="pill-list">
                 <li>Te est&#225;n &#8216;hackeando&#8217; con tu permiso</li>
@@ -712,6 +731,16 @@
             </div>
           </div>
           <hr>
+<div class="visit" style="background-color: #e8edf5;" data-group="2&#186; BACH C" data-level="2? BACH">
+            <div class="group">2&#186; BACH C</div>
+            <div class="cell">ACT. F&#205;SICA (<strong>Garc&#237;a, Guillermo</strong>) [<strong>Gim</strong>]</div>
+            <div class="pill"><strong>CyberPill:</strong> Ingenier&#237;a social<ul class="pill-list">
+                <li>Ese portal &#8216;oficial&#8217; es un clon</li>
+                <li>Tu cerebro es el objetivo</li>
+              </ul>
+            </div>
+          </div>
+          <hr>
           <div class="visit" style="background-color: #e8fff1;" data-group="4&#186; C" data-level="ESO">
             <div class="group">4&#186; C</div>
             <div class="cell">4&#186;DeE.Fr(sId (<strong>Mart&#237;n, Marie Pascale</strong>) [<strong>X34</strong>]
@@ -724,7 +753,7 @@
         <td>
           <div class="visit" style="background-color: #ffe8f1;" data-group="1&#186; C" data-level="ESO">
             <div class="group">1&#186; C</div>
-            <div class="cell">1&#186;DeE.s.Ingl (<strong>Menacho, Maribel</strong>) [<strong>X23</strong>]</div>
+            <div class="cell">1&#186;DeE.s.Ingl (<strong>Sojo, Carmen</strong>) [<strong>X23</strong>]</div>
             <div class="pill"><strong>CyberPill:</strong> Contrase&#241;as seguras y 2FA<ul class="pill-list">
                 <li>El c&#243;digo NO se comparte</li>
                 <li>Tu correo es la llave maestra</li>
@@ -820,11 +849,12 @@
             </div>
           </div>
           <hr>
-          <div class="visit" style="background-color: #e8fff9;" data-group="2&#186; BACH A" data-level="2? BACH">
-            <div class="group">2&#186; BACH A</div>
-            <div class="cell">2&#186;DeBa(cLCYL (<strong>Ruiz Nu&#241;o, Beatriz</strong>) [<strong>X44</strong>]</div>
+          <div class="visit" style="background-color: #f5e8ed;" data-group="2&#186; GBMV" data-level="2? ESO">
+            <div class="group">2&#186; GBMV</div>
+            <div class="cell">2 FPB-MV (<strong>Grijuela D&#237;az, Jos&#233; Mar&#237;a</strong>)
+              [<strong>Y18</strong>]</div>
             <div class="pill"><strong>CyberPill:</strong> Suplantaci&#243;n de identidad<ul class="pill-list">
-                <li>PAU: el mensaje &#8216;oficial&#8217; que NO lo es</li>
+                <li>No era mi amigo, era su cuenta robada</li>
               </ul>
             </div>
           </div>
@@ -869,14 +899,14 @@
             </div>
           </div>
           <hr>
-          <div class="visit" style="background-color: #f5e8ed;" data-group="2&#186; GBMV" data-level="2? ESO">
-            <div class="group">2&#186; GBMV</div>
-            <div class="cell">2 FPB-MV (<strong>Grijuela D&#237;az, Jos&#233; Mar&#237;a</strong>)
-              [<strong>Y18</strong>]</div>
+          <div class="visit" style="background-color: #e8fff9;" data-group="2&#186; BACH A" data-level="2? BACH">
+            <div class="group">2&#186; BACH A</div>
+            <div class="cell">2&#186;DeBa(cLCYL (<strong>Rincón, Víctor</strong>) [<strong>X44</strong>]</div>
             <div class="pill"><strong>CyberPill:</strong> Suplantaci&#243;n de identidad<ul class="pill-list">
                 <li>No era mi amigo, era su cuenta robada</li>
               </ul>
             </div>
+          </div>
             </div< /td>
         <td>
           <div class="visit" style="background-color: #f0f5e8;" data-group="2&#186; BACH B" data-level="2? BACH">
@@ -928,7 +958,7 @@
             </div>
           </div>
           <hr>
-          <div class="visit" style="background-color: #eef6ff;" data-group="3&#186; DIVER" data-level="1? ESO">
+          <div class="visit hidden-visit" style="background-color: #eef6ff;" data-group="3&#186; DIVER" data-level="1? ESO">
             <div class="group">3&#186; DIVER</div>
             <div class="cell">TUT/RELIG (<strong>DIVER COMUN</strong>) [<strong>aula emocion</strong>]</div>
             <div class="pill"><strong>CyberPill:</strong> Grooming y consentimiento<ul class="pill-list">
@@ -945,7 +975,7 @@
         <td>
           <div class="visit" style="background-color: #f9f2e8;" data-group="1&#186; BACH C" data-level="2? BACH">
             <div class="group">1&#186; BACH C</div>
-            <div class="cell">1&#186;DeBa(hYCiI (<strong>Morilla Gallardo, Claudia</strong>) [<strong>X48</strong>]
+            <div class="cell">1&#186;DeBa(hYCiI (<strong>Morilla Gallardo, Claudia</strong>) [<strong>X43</strong>]
             </div>
             <div class="pill"><strong>CyberPill:</strong> Riesgos en apps y fraudes<ul class="pill-list">
                 <li>Kit de emergencia digital</li>
@@ -963,11 +993,20 @@
                 <li>PAU: el mensaje &#8216;oficial&#8217; que NO lo es</li>
               </ul>
             </div>
+          <hr>
+<div class="visit" style="background-color: #e8edf5;" data-group="2&#186; BACH C" data-level="2? BACH">
+            <div class="group">2&#186; BACH C</div>
+            <div class="cell">ACT. F&#205;SICA (<strong>Garc&#237;a, Guillermo</strong>) [<strong>Gim</strong>]</div>
+            <div class="pill"><strong>CyberPill:</strong> Suplantaci&#243;n de identidad<ul class="pill-list">
+                <li>PAU: el mensaje &#8216;oficial&#8217; que NO lo es</li>
+              </ul>
+            </div>
+          </div>
             </div< /td>
         <td>
           <div class="visit" style="background-color: #ffe8f1;" data-group="1&#186; C" data-level="ESO">
             <div class="group">1&#186; C</div>
-            <div class="cell">1&#186;DeE.s.Ingl (<strong>Menacho, Maribel</strong>) [<strong>X23</strong>]</div>
+            <div class="cell">1&#186;DeE.s.Ingl (<strong>Sojo, Carmen</strong>) [<strong>X23</strong>]</div>
             <div class="pill"><strong>CyberPill:</strong> Phishing y mensajes trampa<ul class="pill-list">
                 <li>El link que te roba la cuenta</li>
                 <li>Te regalo skins&#8230; y te roban la cuenta</li>
@@ -1042,7 +1081,7 @@
           <hr>
           <div class="visit" style="background-color: #f0f5e8;" data-group="3&#186; C" data-level="ESO">
             <div class="group">3&#186; C</div>
-            <div class="cell">3&#186;DeE.LeCaYL (<strong>Ruiz Nu&#241;o, Beatriz</strong>) [<strong>X33</strong>]</div>
+            <div class="cell">3&#186;DeE.LeCaYL (<strong>Rincón, Víctor</strong>) [<strong>X33</strong>]</div>
             <div class="pill"><strong>CyberPill:</strong> Grooming y consentimiento<ul class="pill-list">
                 <li>No es ligar, es grooming</li>
                 <li>Si te presionan, no es un &#8216;s&#237;&#8217;</li>
@@ -1107,6 +1146,19 @@
             </div>
           </div>
           <hr>
+<div class="visit" style="background-color: #e8fff9;" data-group="2&#186; BACH A" data-level="2? BACH">
+            <div class="group">2&#186; BACH A</div>
+            <div class="cell">ACT. F&#205;SICA (<strong>Mangado, Daniel</strong>) [<strong>pista</strong>]</div>
+            <div class="pill"><strong>CyberPill:</strong> Riesgos en apps y fraudes<ul class="pill-list">
+                <li>El &#8216;PDF filtrado&#8217; te puede reventar la PAU</li>
+                <li>No te hackean, te infectan</li>
+                <li>Ransomware: el d&#237;a que tu port&#225;til &#8216;muere&#8217;</li>
+                <li>Te roban la cuenta sin saber tu contrase&#241;a</li>
+                <li>Wi-Fi p&#250;blico: c&#243;modo&#8230; y peligroso</li>
+              </ul>
+            </div>
+          </div>
+          <hr>
           <div class="visit" style="background-color: #e8f4ff;" data-group="4&#186; B" data-level="ESO">
             <div class="group">4&#186; B</div>
             <div class="cell">4&#186;DeE.Fr(sId (<strong>Mart&#237;n, Marie Pascale</strong>) [<strong>X34</strong>]
@@ -1126,7 +1178,7 @@
         <td>
           <div class="visit" style="background-color: #f5e8ed;" data-group="1&#186; BACH A" data-level="2? BACH">
             <div class="group">1&#186; BACH A</div>
-            <div class="cell">1&#186;DeBa(cF&#237;YQ (<strong>Andrade, Laura Cristina</strong>) [<strong>X41</strong>]
+            <div class="cell">1&#186;DeBa(cF&#237;YQ (<strong>Benítez, Rafael</strong>) [<strong>X41</strong>]
             </div>
             <div class="pill"><strong>CyberPill:</strong> Riesgos en apps y fraudes<ul class="pill-list">
                 <li>Kit de emergencia digital</li>
@@ -1184,7 +1236,7 @@
             </div>
           </div>
           <hr>
-          <div class="visit" style="background-color: #eef6ff;" data-group="3&#186; DIVER" data-level="1? ESO">
+          <div class="visit hidden-visit" style="background-color: #eef6ff;" data-group="3&#186; DIVER" data-level="1? ESO">
             <div class="group">3&#186; DIVER</div>
             <div class="cell">TUT/RELIG (<strong>DIVER COMUN</strong>) [<strong>aula emocion</strong>]</div>
             <div class="pill"><strong>CyberPill:</strong> Sextorsi&#243;n y chantaje<ul class="pill-list">
@@ -1243,6 +1295,19 @@
             <div class="group">2&#186; BACH C</div>
             <div class="cell">2&#186;DeB(YCHDLF (<strong>Parrila, Celia Mar&#237;a</strong>) [<strong>X46</strong>]
             </div>
+            <div class="pill"><strong>CyberPill:</strong> Riesgos en apps y fraudes<ul class="pill-list">
+                <li>El &#8216;PDF filtrado&#8217; te puede reventar la PAU</li>
+                <li>No te hackean, te infectan</li>
+                <li>Ransomware: el d&#237;a que tu port&#225;til &#8216;muere&#8217;</li>
+                <li>Te roban la cuenta sin saber tu contrase&#241;a</li>
+                <li>Wi-Fi p&#250;blico: c&#243;modo&#8230; y peligroso</li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+<div class="visit" style="background-color: #e8edf5;" data-group="2&#186; BACH C" data-level="2? BACH">
+            <div class="group">2&#186; BACH C</div>
+            <div class="cell">ACT. F&#205;SICA (<strong>Garc&#237;a, Guillermo</strong>) [<strong>Gim</strong>]</div>
             <div class="pill"><strong>CyberPill:</strong> Riesgos en apps y fraudes<ul class="pill-list">
                 <li>El &#8216;PDF filtrado&#8217; te puede reventar la PAU</li>
                 <li>No te hackean, te infectan</li>
@@ -1317,8 +1382,9 @@
     (function () {
       const levelSelect = document.getElementById('filter-level');
       const groupSelect = document.getElementById('filter-group');
+      const teacherSelect = document.getElementById('filter-teacher');
       const clearBtn = document.getElementById('clear-filters');
-      const visits = Array.from(document.querySelectorAll('.visit'));
+      const visits = Array.from(document.querySelectorAll('.visit:not(.hidden-visit)'));
       const DEG = '\u00ba';
 
       function uniq(arr) { return Array.from(new Set(arr)); }
@@ -1347,12 +1413,16 @@
       visits.forEach(v => {
         const groupEl = v.querySelector('.group');
         const group = groupEl ? groupEl.textContent.trim() : '';
+        const teacherEl = v.querySelector('.cell strong');
+        const teacher = teacherEl ? teacherEl.textContent.trim() : '';
         v.dataset.group = group;
         v.dataset.level = getLevel(group);
+        v.dataset.teacher = teacher;
       });
 
       const levels = uniq(visits.map(v => v.dataset.level)).sort();
       const groups = uniq(visits.map(v => v.dataset.group)).sort();
+      const teachers = uniq(visits.map(v => v.dataset.teacher).filter(Boolean)).sort();
 
       levels.forEach(l => {
         const opt = document.createElement('option');
@@ -1364,24 +1434,33 @@
         opt.value = g; opt.textContent = g;
         groupSelect.appendChild(opt);
       });
+      teachers.forEach(t => {
+        const opt = document.createElement('option');
+        opt.value = t; opt.textContent = t;
+        teacherSelect.appendChild(opt);
+      });
 
       function applyFilters() {
         const level = levelSelect.value;
         const group = groupSelect.value;
+        const teacher = teacherSelect.value;
         visits.forEach(v => {
           const matchLevel = !level || v.dataset.level === level;
           const matchGroup = !group || v.dataset.group === group;
-          const match = matchLevel && matchGroup;
-          v.classList.toggle('dim', !match && (level || group));
-          v.classList.toggle('highlight', match && (level || group));
+          const matchTeacher = !teacher || v.dataset.teacher === teacher;
+          const match = matchLevel && matchGroup && matchTeacher;
+          v.classList.toggle('dim', !match && (level || group || teacher));
+          v.classList.toggle('highlight', match && (level || group || teacher));
         });
       }
 
       levelSelect.addEventListener('change', applyFilters);
       groupSelect.addEventListener('change', applyFilters);
+      teacherSelect.addEventListener('change', applyFilters);
       clearBtn.addEventListener('click', () => {
         levelSelect.value = '';
         groupSelect.value = '';
+        teacherSelect.value = '';
         applyFilters();
       });
     })();
